@@ -99,3 +99,10 @@ button:hover {
     transform: scale(1.2);
     color: black;
 }
+
+.container_options__button {
+    background-color: transparent;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}

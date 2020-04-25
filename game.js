@@ -4,10 +4,13 @@ var btn_tijeras = document.getElementById("Tijeras");
 var btn_iniciar = document.getElementById("Iniciar_juego");
 var img_usuario = document.getElementById("usuario");
 var img_cpu = document.getElementById("cpu");
+var marcador_usuario = document.getElementById("puntos_usuario").innerText;
+var marcador_cpu = document.getElementById("puntos_cpu").innerText;
 
 var Menu = "espera";
 var Opcion_jugador;
 var Opcion_cpu;
+
 
 
 
@@ -71,10 +74,16 @@ function game(opcion_jugador, opcion_cpu) {
 
     if (escenario_1 || escenario_2 || escenario_3) {
         alert("usuario gana");
+        marcador_usuario++;
+        document.getElementById("puntos_usuario").innerText = marcador_usuario;
+
+
     } else if (empate) {
         alert("EMPATE");
     } else {
         alert("CPU gana");
+        marcador_cpu++;
+        document.getElementById("puntos_cpu").innerText = marcador_cpu;
     }
 }
 

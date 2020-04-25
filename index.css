@@ -106,3 +106,15 @@ button:hover {
     height: 50px;
     width: 50px;
 }
+
+#puntos_usuario {
+    margin-top: 2px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#puntos_cpu {
+    margin-top: 2px;
+    font-size: 25px;
+    font-weight: bolder;
+}
